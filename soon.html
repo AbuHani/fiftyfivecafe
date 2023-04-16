@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+    }
+
+    .bgimg {
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      color: white;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 25px;
+    }
+    .bgimg::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      opacity: 0.7;
+      background: linear-gradient(-9deg, #6a82fb 0%, #6a82fb 40%, #fc5c7d 100%);
+    }
+
+    .topleft {
+      position: absolute;
+      top: 0;
+      left: 16px;
+    }
+
+    .bottomleft {
+      position: absolute;
+      bottom: 0;
+      left: 16px;
+    }
+
+    .middle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    hr {
+      margin: auto;
+      width: 40%;
+    }
+  </style>
+  <body>
+    <div class="bgimg">
+      <div class="middle">
+        <h1>COMING SOON</h1>
+        <hr />
+        <!-- <p>35 days left</p> -->
+      </div>
+      <!-- <div class="bottomleft">
+        <p>Some text</p>
+      </div> -->
+    </div>
+  </body>
+</html>

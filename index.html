@@ -1,68 +1,49 @@
 <!DOCTYPE html>
-<html>
-  <style>
-    body,
-    html {
-      height: 100%;
-      margin: 0;
-    }
-
-    .bgimg {
-      height: 100%;
-      background-position: center;
-      background-size: cover;
-      position: relative;
-      color: white;
-      font-family: "Courier New", Courier, monospace;
-      font-size: 25px;
-    }
-    .bgimg::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      z-index: -1;
-      opacity: 0.7;
-      background: linear-gradient(-9deg, #6a82fb 0%, #6a82fb 40%, #fc5c7d 100%);
-    }
-
-    .topleft {
-      position: absolute;
-      top: 0;
-      left: 16px;
-    }
-
-    .bottomleft {
-      position: absolute;
-      bottom: 0;
-      left: 16px;
-    }
-
-    .middle {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-    }
-
-    hr {
-      margin: auto;
-      width: 40%;
-    }
-  </style>
+<html lang="ar" dir="rtl">
+  <head>
+    <title>Fifty five cafe - Menu</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="assets/css/theme.min.css" rel="stylesheet" />
+    <link href="assets/css/menu.css?v=2" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.jpeg" />
+  </head>
   <body>
-    <div class="bgimg">
-      <div class="middle">
-        <h1>COMING SOON</h1>
-        <hr />
-        <!-- <p>35 days left</p> -->
-      </div>
-      <!-- <div class="bottomleft">
-        <p>Some text</p>
-      </div> -->
+    <nav class="menu-navigation" id="mainNav">
+      <a href="#milkshake">ميلك شيك</a>
+      <a href="#drinks">مشروبات</a>
+      <a href="#desserts">حلويات</a>
+      <a href="#ices">آيسات</a>
+      <a href="#hookah">أرجيلة</a>
+    </nav>
+
+    <div class="t-content" id="content">
+      <section class="menu-section" data-anchor="top" id="top">
+        <img src="assets/images/menu.jpg" />
+      </section>
+
+      <section class="menu-section" data-anchor="milkshake" id="milkshake">
+        <img src="assets/images/menu/shake.png" />
+      </section>
+
+      <section class="menu-section" data-anchor="header" id="drinks">
+        <img src="assets/images/menu/drinks.png" />
+      </section>
+
+      <section class="menu-section" data-anchor="header" id="desserts">
+        <img src="assets/images/menu/desserts.png" />
+      </section>
+
+      <section class="menu-section" data-anchor="header" id="ices">
+        <img src="assets/images/menu/ice.png" />
+      </section>
+
+      <section class="menu-section" data-anchor="header" id="hookah">
+        <img src="assets/images/menu/hookah.jpg" />
+      </section>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/assets/script/index.js"></script>
   </body>
 </html>

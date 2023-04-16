@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+body {
+  font-size: 28px;
+  /*font-family: 'Open Sans', sans-serif;*/
+  font-family: "Montserrat", sans-serif;
+  background: #1a1a1a;
+  padding-bottom: 100px;
+  max-width: 750px;
+  margin: 0 auto;
+  direction: rtl;
+}
+
+.header {
+  padding: 0;
+  margin: 0;
+}
+
+.header img {
+  width: 100%;
+}
+
+.menu-navigation {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.menu-navigation a {
+  float: right;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 7px;
+  text-decoration: none !important;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 600;
+  overflow: hidden;
+  background: none;
+}
+
+.menu-navigation a.active {
+  background-color: #f8b42b;
+  color: white;
+}
+
+.m-menu-navigation {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.m-menu-navigation a {
+  float: right;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 6px;
+  text-decoration: none !important;
+  font-size: 12px;
+  text-transform: capitalize;
+  font-weight: 600;
+  overflow: hidden;
+  background: none;
+}
+
+.m-menu-navigation a.active {
+  background-color: #f8b42b;
+  color: white;
+}
+
+.sticky {
+  position: sticky;
+  top: -1px;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.menu-section {
+  width: 100%;
+  background: #1a1a1a;
+  padding-top: 0;
+  display: block;
+  padding-top: 40px;
+  margin-bottom: -40px;
+  scroll-margin-top: 10px;
+}
+
+.menu-section:first-child {
+  padding-top: 0;
+}
+
+.menu-section img {
+  width: 100%;
+}
+
+.landing {
+  width: 100%;
+  position: relative;
+}
+
+.landing .logo {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.landing .logo img {
+  width: 150px;
+}
+
+.landing-btn-group {
+  width: 100%;
+}
+.landing-btn-group h2 {
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.landing h1 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  margin: 40px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.landing .slogan {
+  text-align: center;
+  display: block;
+  margin-top: 100px;
+}
+
+.landing-btn {
+  width: 50%;
+  min-width: 280px;
+  padding: 5px;
+  text-align: center;
+  color: #333;
+  background: #fcb039;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  font-size: 18px;
+  /*font-family: 'Roboto', sans-serif;*/
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.landing-btn:hover {
+  color: #fcb039;
+  background: #333;
+  text-decoration: none;
+}
+
+.landing-btn.btn-pink {
+  background: #ff9db0;
+}
+
+.landing-btn.btn-pink:hover {
+  color: #ff9db0;
+  background: #333;
+}
+
+.call-to-action {
+  position: fixed;
+  bottom: 5px;
+}
+
+.call-to-action .actions-group {
+}
+
+.desserts_icons {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+}
+.desserts_icons img {
+  width: 200px;
+}
+.cake_menu img,
+.desserts_menu img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .m-menu-navigation a {
+    padding: 14px 4px;
+  }
+}
